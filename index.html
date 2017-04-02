@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <title>my weather app</title>
+</head>
+<body>
+  <section class="main">
+    <h1>weather app 2017</h1>
+    <div class="inner">
+      <form id="weather">
+        <input type="text" placeholder="city">
+        <input type="text" placeholder="country">
+        <button>get weather</button>
+      </form>
+      
+    
+  </div>
+  </section>
+  <ul id="weatherforecast5day">
+
+</ul>
+<img id="logo" src="http://icons.wxug.com/logos/PNG/wundergroundLogo_4c_rev_horz.png" />
+  <script>
+  function changeweather{
+  var city = document.getElementById("city").value;
+         var country = document.getElementById("country").value;
+         var weather = new XMLHttpRequest();
+         weather.open("GET", 
+         xmlhttp.open("GET", url, true);
+         xmlhttp.send();
+         function myFunction(data){
+        var forecast = data.forecast.simpleforecast.forecastday;
+
+        var $ul = document.getElementById('weatherforecast5day');
+        $ul.innerHTML = "";
+
+        for(var i = 0; i < 5; i++) {
+             addItemToList($ul, forecast[i])
+         }
+
+        var cityName = data.location.city;
+
+        getCityName(cityName)
+
+}
+          xmlhttp.onreadystatechange = function(){
+         document.addEventListener("DOMContentLoaded", function(){
+ var $form = document.getElementById("city");
+ var $form = document.getElementById("country");
+ var $ = $form.querySelector("input[type='text']");
+
+ $form.addEventListener('get weather', function(event){
+        event.preventDefault();
+  var url = "http://api.wunderground.com/api/d89f318f93a1c98e/geolookup/forecast10day/q=" + city + "," + country;")
+  getJSONP(url, 'myFunction')
+});       
+         {
+         }
+       }
+     }
+    
+
+
+  </script>
+</body>
+</html>
+
+
+
